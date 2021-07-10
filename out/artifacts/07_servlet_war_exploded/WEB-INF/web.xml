@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>requestAPIServlet</servlet-name>
+        <servlet-class>com.servlet.RequestAPIServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>com.servlet.Servlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>com.servlet.Servlet2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>forwardC</servlet-name>
+        <servlet-class>com.servlet.ForwardC</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>responseIOSServlet</servlet-name>
+        <servlet-class>com.servlet.ResponseIOSServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>response1</servlet-name>
+        <servlet-class>com.servlet.Response1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>response2</servlet-name>
+        <servlet-class>com.servlet.Response2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>response2</servlet-name>
+        <url-pattern>/response2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>response1</servlet-name>
+        <url-pattern>/response1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>responseIOSServlet</servlet-name>
+        <url-pattern>/response</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>forwardC</servlet-name>
+        <url-pattern>/forwardC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>requestAPIServlet</servlet-name>
+        <url-pattern>/requestAPI</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
